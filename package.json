@@ -1,0 +1,30 @@
+{
+  "name": "khush-homepage",
+  "version": "1.0.0",
+  "description": "A website describing myself, my hobbies, my projects, my resume, etc.",
+  "main": "index.js",
+  "scripts": {
+    "start": "reload -b",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmpat339/khush-homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kmpat339/khush-homepage/issues"
+  },
+  "homepage": "https://github.com/kmpat339/khush-homepage#readme",
+  "devDependencies": {
+    "@eslint/css": "^1.2.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
+  }
+}

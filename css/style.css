@@ -1,0 +1,47 @@
+body {
+    background-color: beige;
+}
+
+.border-tan {
+    --bs-border-color: brown;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    margin: 10px;
+    padding: 16px;
+    color: #3d2c1e;
+    background-color: #f5e6d3;
+    border-style:double;
+    border-color: #8b6f47;
+}
+
+section > h2 {
+    color:#c37f1f
+}
+
+/*  climber/mountain  */
+.mountain-scene {
+     position:relative; /* make it a reference frame for children*/
+     width:100%;
+     max-width:800px;
+     margin:0 auto;
+
+}
+
+.mountain-img {
+    width:100%;
+    display:block;
+}
+
+.hiker-img {
+    position:absolute;
+    width:20%;
+    height:auto;
+    bottom:-8%;
+    left: 20%;
+
+}
+
+
