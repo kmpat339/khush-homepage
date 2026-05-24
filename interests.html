@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Limelight&family=Press+Start+2P&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Limelight&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
     <!-- link style sheets -->
@@ -47,9 +47,15 @@
       </nav>
 
       <h1 class="main-heading">Khush's Main Interests</h1>
+      <p class="scroll-label">Scroll to a section:</p>
+      <nav class="interest-section-nav">
+        <a href="#movies">Movies</a>
+        <a href="#games">Video Games</a>
+        <a href="#shows">TV Shows</a>
+      </nav>
     </header>
-    <section class="container my-4">
-      <h2 class="movies-heading">Top 3 Movies</h2>
+    <section id="movies" class="container my-4">
+      <h2 class="movies-heading marquee-title">Top 3 Movies</h2>
 
       <div class="row g-4">
         <div class="col-md-4">
@@ -144,14 +150,14 @@
             </figure>
             <ul>
               <li>
-                The mystery of waking up alone with amnesia hooks you immediately.
-                Piecing together who the main character is and why he's in space
-                makes the first half impossible to put down.
+                The mystery of waking up alone with amnesia hooks you
+                immediately. Piecing together who the main character is and why
+                he's in space makes the first half impossible to put down.
               </li>
               <li>
-                The friendship between Grace and Rocky is the heart of the story.
-                Two characters who can't even share an atmosphere become best
-                friends through curiosity and trust.
+                The friendship between Grace and Rocky is the heart of the
+                story. Two characters who can't even share an atmosphere become
+                best friends through curiosity and trust.
               </li>
               <li>
                 The science problem-solving is fun without being overwhelming.
@@ -161,8 +167,143 @@
             </ul>
           </div>
         </div>
-
       </div>
+    </section>
+
+    <section id="games" class="container my-4">
+      <h2 class="games-heading synth-title">Top 3 Video Games</h2>
+
+      <div class="game-card">
+        <div class="row g-4">
+          <div class="col-md-8">
+            <figure>
+              <img
+                src="./images/uncharted-4.jpg"
+                alt="picture of uncharted 4 video game"
+                class="game-img"
+              />
+              <figcaption>
+                Image source:
+                <a
+                  href="https://www.flickr.com/photos/josky/27026413645/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Flickr</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <h3 class="games-heading"><b>Uncharted 4 </b></h3>
+            <p>
+              <em>Uncharted 4 </em> is honestly one of the most cinematic games
+              I've ever played. The story between Nathan and his brother
+              actually hit me in the feels, and the locations are gorgeous. Plus
+              those big set pieces like the jeep chase in Madagascar are unreal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="row g-4">
+          <div class="col-md-8">
+            <figure>
+              <img
+                src="./images/assassins-black-flag.jpg"
+                alt="picture of assassins creed black flag video game"
+                class="game-img"
+              />
+              <figcaption>
+                Image source:
+                <a
+                  href="https://www.deviantart.com/thesyanart/art/Assassin-s-Creed-IV-Black-Flag-Wallpaper-357839700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >DeviantArt</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <h3 class="games-heading"><b>Assassins's Creed Black Flag</b></h3>
+            <p>
+              <em> Assassins's Creed Black Flag </em> honestly took me by
+              surprise because I went in expecting a regular Assassin's Creed
+              game and got a full pirate adventure instead. Edward Kenway is one
+              of the most fun protagonists in the series, and the open ocean
+              made the world feel huge. I lost so many hours just exploring
+              islands and hunting sharks.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="row g-4">
+          <div class="col-md-8">
+            <figure>
+              <img
+                src="./images/super-smash-bros.jpg"
+                alt="picture of Super Smash Bros. video game"
+                class="game-img"
+              />
+              <figcaption>
+                Image source:
+                <a
+                  href="https://www.deviantart.com/lucas-zero/art/Super-Smash-Bros-Ultimate-Wallpaper-749485350"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >DeviantArt</a
+                >
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <h3 class="games-heading"><b>Super Smash Bros.</b></h3>
+            <p>
+              <em>Super Smash Bros.</em> is pure childhood nostalgia for me.
+              Getting to throw down with Mario, Link, and Pikachu in the same
+              fight felt unreal as a kid, and it still does. Late nights with
+              friends on the couch arguing over who picks Kirby never get old.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="shows" class="container my-4">
+      <h2 class="shows-heading tv-title">TV Show Tier List</h2>
+
+      <table class="tier-list">
+        <tbody>
+          <tr class="tier-s">
+            <td class="tier-label">S</td>
+            <td class="tier-shows">
+              Breaking Bad, The Sopranos, White Lotus, Mr. Robot, Slow Horses
+            </td>
+          </tr>
+          <tr class="tier-a">
+            <td class="tier-label">A</td>
+            <td class="tier-shows">
+              The Bear, The Gentlemen, The Boys, Chernobyl, Alien: Earth,
+              Arrested Development
+            </td>
+          </tr>
+          <tr class="tier-b">
+            <td class="tier-label">B</td>
+            <td class="tier-shows">
+              Homeland, Killing Eve, Suits, Ted Lasso, The Office
+            </td>
+          </tr>
+          <tr class="tier-c">
+            <td class="tier-label">C</td>
+            <td class="tier-shows">
+              Grey's Anatomy, Riverdale, Outer Banks, 90 Day Fiance, Love Island
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </body>
 </html>

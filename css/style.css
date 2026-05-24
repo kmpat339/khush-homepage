@@ -1,5 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: beige;
+}
+
+.interest-section-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px auto;
+}
+
+.interest-section-nav a {
+  color: #3d2c1e;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.interest-section-nav a:hover {
+  background-color: rgb(197, 197, 214);
+  border-radius:10px;
+}
+
+.scroll-label {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  font-weight:bold;
 }
 
 .border-tan {
@@ -29,18 +59,16 @@ section > h2 {
   border: 2px solid #8b6f47;
 }
 
-
 #journey-btn:hover {
   box-shadow: 0 0 10px red;
 }
 
 #journey-counter {
-    margin:5px;
-    font-weight: bold;
-    font-size:18px;
-    color: grey;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: grey;
 }
-
 
 /*  climber/mountain  */
 .mountain-scene {
@@ -78,7 +106,6 @@ section > h2 {
 /* bubble CSS properties  */
 .bubble {
   position: absolute;
-  /* shared visual styles only — no positioning */
   background: white;
   color: black;
   padding: 8%;
@@ -88,8 +115,8 @@ section > h2 {
 }
 
 .bubble-top {
-  width:max-content;
-  max-width:125%;
+  width: max-content;
+  max-width: 125%;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -98,12 +125,15 @@ section > h2 {
 .bubble-right {
   top: 10%;
   left: 45%;
-  white-space:nowrap;
+  white-space: nowrap;
   transform: translateY(-50%);
 }
 
 /* === Interests PAGE === */
 
+.movie-card {
+  margin-top: 20px;
+}
 
 .movie-card img {
   max-width: 100%;
@@ -117,15 +147,129 @@ section > h2 {
   margin-top: 5px;
 }
 
-.movie-card h3 {
+.movies-heading {
+  font-family: "Limelight", cursive;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
 }
 
-.movies-heading {
-  font-family: 'Limelight', cursive;
+.marquee-title {
+  background-image:
+    radial-gradient(circle, gold 3px, transparent 4px),
+    radial-gradient(circle, gold 3px, transparent 4px),
+    radial-gradient(circle, gold 3px, transparent 4px),
+    radial-gradient(circle, gold 3px, transparent 4px);
+  background-position: top, bottom, left, right;
+  background-size:
+    22px 20px,
+    22px 10px,
+    10px 22px,
+    10px 22px;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-color: #8b0000;
+  color: gold;
+  text-align: center;
+  padding: 18px;
+  font-family: "Limelight", cursive;
+  text-shadow: 0 0 4px gold;
 }
 
 .games-heading {
-  font-family: 'Press Start 2P', monospace;
+  font-family: "Press Start 2P", monospace;
+  text-align: center;
+}
+
+.synth-title {
+  background: linear-gradient(#ff006e, #8338ec, #3a86ff);
+  color: #ffd700;
+  padding: 20px;
+  font-family: "Press Start 2P", monospace;
+
+  text-align: center;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.game-card {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.game-card img {
+  max-width: 100%;
+  aspect-ratio: 6/3;
+  display: block;
+}
+
+.game-card figcaption {
+  font-size: 0.8rem;
+  text-align: center;
+  color: grey;
+  margin-top: 5px;
+}
+
+/* TV Show Tier List */
+.shows-heading {
+  text-align: center;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2.5rem;
+}
+
+.tv-title {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #2c1810;
+  border-style: double;
+  border-color: #2c1810;
+  padding: 10px;
+  background-color: rgb(216, 221, 227);
+}
+
+.tier-list {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  border: 3px solid darkred;
+}
+
+.tier-list td {
+  padding: 16px;
+  border: 3px solid darkred;
+}
+
+/* default label look */
+.tier-label {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  width: 80px;
+  color: white;
+  font-family: "Press Start 2P", monospace;
+}
+
+/* add background colors for labels and associated text */
+.tier-s .tier-shows {
+  background-color: #ffe0e0;
+}
+.tier-s .tier-label {
+  background-color: #d32f2f;
+}
+
+.tier-a .tier-shows {
+  background-color: #ffe8d0;
+}
+.tier-a .tier-label {
+  background-color: #f57c00;
+}
+
+.tier-b .tier-shows {
+  background-color: #fff8d0;
+}
+.tier-b .tier-label {
+  background-color: #f9a825;
+}
+
+.tier-c .tier-shows {
+  background-color: #e0f0d0;
+}
+.tier-c .tier-label {
+  background-color: #689f38;
 }
