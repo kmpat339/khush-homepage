@@ -6,7 +6,7 @@ body {
   --bs-border-color: brown;
 }
 
-h1 {
+.main-heading {
   text-align: center;
   font-family: cursive;
   margin: 10px;
@@ -20,6 +20,11 @@ h1 {
 section > h2 {
   color: #c37f1f;
 }
+
+.textcolor-blue {
+    color:blue;
+}
+
 
 #journey-btn:hover {
   box-shadow: 0 0 10px red;
