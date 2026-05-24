@@ -21,8 +21,11 @@ section > h2 {
   color: #c37f1f;
 }
 
-.textcolor-blue {
-    color:blue;
+.contact {
+  background-color: #f5e6d3;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #8b6f47;
 }
 
 
