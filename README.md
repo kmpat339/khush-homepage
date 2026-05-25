@@ -10,7 +10,7 @@ A multi-page personal homepage built from scratch with HTML, CSS, Bootstrap 5, a
 
 ## About
 
-This is my multi-page personal portfolio site built for CS5610 Web Development at Northeastern University. It introduces who I am, what I'm interested in, and what I've worked on, using a warm earthy color palette with a hand-built interactive mountain animation, a colorful interests page, and an AI-generated resume page.
+This is my multi-page personal homepage built for CS5610 Web Development at Northeastern University. It introduces who I am, what I'm interested in, and what I've worked on, using a warm earthy color palette with a hand-built interactive mountain animation, a colorful interests page, and an AI-generated resume page.
 
 ## Pages
 
@@ -125,6 +125,40 @@ This section discloses where generative AI was used in this project per the assi
 
 - Full prompts used to generate the resume page: [prompts/resume-page-prompts.md](./prompts/resume-page-prompts.md)
 - Prompt used to generate the first draft of this README: [prompts/readme-prompt.md](./prompts/readme-prompt.md)
+
+## Image References
+
+All images and icons used in this project were sourced from public web pages. Attribution for each file in `images/`:
+
+### Illustrations
+
+- `mountain.png` — [Freepik / Magnific](https://www.magnific.com/free-psd/view-nature-mountain-landscape_269375071.htm)
+- `hiker.png` — [Freepik / Magnific](https://www.magnific.com/free-vector/explorer-with-backpack-background_4302663.htm)
+
+### Movie posters
+
+- `dark-knight.jpg` — [Pinterest](https://www.pinterest.com/pin/47006389852371756/)
+- `interstellar.jpg` — [Pinterest](https://www.pinterest.com/pin/422281211101286/)
+- `project-hail-mary.jpg` — [Pinterest](https://www.pinterest.com/pin/774124931625183/)
+
+### Video game art
+
+- `uncharted-4.jpg` — [Flickr](https://www.flickr.com/photos/josky/27026413645/)
+- `assassins-black-flag.jpg` — [DeviantArt](https://www.deviantart.com/thesyanart/art/Assassin-s-Creed-IV-Black-Flag-Wallpaper-357839700)
+- `super-smash-bros.jpg` — [DeviantArt](https://www.deviantart.com/lucas-zero/art/Super-Smash-Bros-Ultimate-Wallpaper-749485350)
+
+### Page favicons
+
+- `home-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/home_25694)
+- `interests-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/mental-health_3588658)
+- `resume-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/resume_2815429)
+
+### Contact icons (resume page)
+
+- `phone-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/telephone-handle-silhouette_25453)
+- `mail-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/envelope-of-white-paper_25647)
+- `linkedin-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
+- `github-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
 
 ## License
 

@@ -23,6 +23,7 @@ Sections I need:
 - Class info (CS5610 Web Development at Northeastern, instructor John Alexis Guerra Gómez)
 - GenAI disclosure section
 - License section
+- Image contributions section
 -Contributing section
 
 Tech used: HTML, CSS, Bootstrap 5, vanilla JS. Google Fonts. Reload for dev server.
