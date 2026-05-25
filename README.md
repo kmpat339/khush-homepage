@@ -80,18 +80,25 @@ If you just want to view the site without installing anything, open `index.html`
 
 ```
 khush-homepage/
-├── index.html
+├── index.html                          # About Me page (home)
 ├── pages/
-│   ├── interests.html
-│   └── resume.html
+│   ├── interests.html                  # Interests page
+│   └── resume.html                     # Resume page (AI-generated)
 ├── css/
-│   ├── style.css
-│   └── resume.css
+│   ├── style.css                       # Shared site styles
+│   └── resume.css                      # Resume page styles
 ├── js/
-│   ├── main.js
-│   └── resume.js
-├── images/
-└── package.json
+│   ├── main.js                         # Home page interactivity
+│   └── resume.js                       # Resume page interactivity
+├── images/                             # Photos, illustrations, icons, screenshots
+├── prompts/                            # AI prompts used (for transparency)
+│   ├── readme-prompt.md
+│   └── resume-page-prompts.md
+├── khush_homepage_design_document.pdf  # Design document (submission)
+├── README.md
+├── LICENSE
+├── package.json                        # Dev dependencies & npm scripts
+└── eslint.config.mjs                   # ESLint config
 ```
 
 ## Screenshots
