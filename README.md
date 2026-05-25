@@ -1,10 +1,10 @@
-# Khush's Personal Homepage
+# Khush Patel's Homepage
 
 A multi-page personal homepage built from scratch with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
 🔗 **Live Demo:** [https://kmpat339.github.io/khush-homepage/](https://kmpat339.github.io/khush-homepage/)
 
-🎥 **Video Demo:** [Coming soon](#)
+🎥 **Video Demo:** [Coming soon](https://youtu.be/fuRSZ824yyo) 
 
 ![Homepage Screenshot](./images/screenshot-home.png)
 
@@ -38,23 +38,41 @@ This is my multi-page personal homepage built for CS5610 Web Development at Nort
 
 ## Install & Run
 
-1. Clone the repository
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) 18 or later (includes `npm`)
+- [Git](https://git-scm.com/)
+
+### Option 1 — Local dev server (with live reload)
+
+1. Clone the repository:
    ```bash
    git clone https://github.com/kmpat339/khush-homepage.git
    cd khush-homepage
    ```
 
-2. Install dependencies
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Start the dev server
+   This pulls in everything listed under `devDependencies` in `package.json`:
+   - **reload** — the live-reload dev server used by `npm start`
+   - **eslint** + **@eslint/js** + **@eslint/css** + **globals** — JavaScript and CSS linting
+   - **prettier** + **eslint-config-prettier** — code formatting (the config keeps ESLint and Prettier from fighting each other)
+
+3. Start the dev server. The `-b` flag opens the site in your default browser automatically:
    ```bash
    npm start
    ```
 
-4. Open `http://localhost:8080` in your browser
+4. The site will open at [http://localhost:8080](http://localhost:8080). Edits to HTML, CSS, or JS trigger an automatic page reload.
+
+   *If port 8080 is already in use*, stop the other process or pass a different port to `reload` (see the [reload docs](https://www.npmjs.com/package/reload)).
+
+### Option 2 — Open directly (no install needed)
+
+If you just want to view the site without installing anything, open `index.html` in your browser. Everything works the same; you just don't get live reload.
 
 ## Project Structure
 
