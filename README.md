@@ -92,11 +92,12 @@ khush-homepage/
 💼 [LinkedIn](https://www.linkedin.com/in/khushmpatel5875)
 🐙 [GitHub](https://github.com/kmpat339)
 
-## Class
+## Academic Reference
 
-[CS5610 Web Development — Northeastern University](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
-Instructor: John Alexis Guerra Gómez
-Summer 2026
+This project was created as part of the **Web Development Course (Summer 2026)** at Northeastern University.
+
+- **Course** [CS5610 Web Development — Northeastern University](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
+- **Instructor**: John Alexis Guerra Gómez
 
 ## Use of GenAI Tools
 
