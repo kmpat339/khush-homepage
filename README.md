@@ -96,7 +96,7 @@ khush-homepage/
 
 This project was created as part of the **Web Development Course (Summer 2026)** at Northeastern University.
 
-- **Course** [CS5610 Web Development — Northeastern University](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
+- **Course**: [CS5610 Web Development — Northeastern University](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
 - **Instructor**: John Alexis Guerra Gómez
 
 ## Use of GenAI Tools
