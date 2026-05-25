@@ -2,7 +2,6 @@
 
 A multi-page personal portfolio site built from scratch with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
-🔗 **Live Demo:** [Coming soon](#)
 🎥 **Video Demo:** [Coming soon](#)
 
 ![Homepage Screenshot](./images/screenshot-home.png)
