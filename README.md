@@ -192,7 +192,7 @@ All images and icons used in this project were sourced from public web pages. At
 - `phone-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/telephone-handle-silhouette_25453)
 - `mail-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/envelope-of-white-paper_25647)
 - `linkedin-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
-- `github-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
+- `github-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/github-sign_25657)
 
 ## License
 
