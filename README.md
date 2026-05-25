@@ -96,3 +96,27 @@ khush-homepage/
 [CS5610 Web Development — Northeastern University](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
 Instructor: John Alexis Guerra Gómez
 Summer 2026
+
+## Use of GenAI Tools
+
+This section discloses where generative AI was used in this project per the assignment requirements.
+
+### Tools
+
+- **Claude Opus 4.6** (Anthropic) — used in Claude Code CLI
+
+### Where AI was used
+
+1. **Resume page generation** — `resume.html`, `css/resume.css`, and `js/resume.js` were generated from a master prompt in a single shot, followed by two small follow-up prompts to fix bugs and add icons.
+
+2. **Prompt refinement** — The master prompt itself was iteratively refined with Claude Opus 4.6 in a separate session before being sent to the resume-generating model. Ideas and structure were mine; the AI helped sharpen the specificity and phrasing.
+
+### Where AI was NOT used
+
+- All other HTML, CSS, and JavaScript (`index.html`, `interests.html`, `css/style.css`, `js/main.js`) were hand-written from scratch.
+- All images, posters, and icons were sourced from public web pages with attribution.
+- Page structure, design choices, content (interests, movies, games, TV shows), and the overall theme were my own.
+
+### Prompts used
+
+The full prompts used to generate the resume page are documented in [prompts/resume-page-prompts.md](./prompts/resume-page-prompts.md).
