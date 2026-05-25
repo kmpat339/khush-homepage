@@ -22,14 +22,14 @@ body {
 
 .interest-section-nav a:hover {
   background-color: rgb(197, 197, 214);
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .scroll-label {
   text-align: center;
   color: #666;
   font-style: italic;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .border-tan {
@@ -211,11 +211,11 @@ section > h2 {
   text-align: center;
   font-family: "Cinzel Decorative", serif;
   font-size: 2.5rem;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 .tv-title {
-  letter-spacing: 10px;
-  text-transform: uppercase;
   color: #2c1810;
   border-style: double;
   border-color: #2c1810;
@@ -246,7 +246,8 @@ section > h2 {
 }
 
 .tier-shows {
-    font-style: italic;
+  font-style: italic;
+  font-weight: 450;
 }
 
 /* add background colors for labels and associated text */

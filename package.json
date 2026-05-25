@@ -12,9 +12,9 @@
     "url": "git+https://github.com/kmpat339/khush-homepage.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Khush Patel",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/kmpat339/khush-homepage/issues"
   },
