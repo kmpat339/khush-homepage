@@ -4,7 +4,7 @@ A multi-page personal homepage built from scratch with HTML, CSS, Bootstrap 5, a
 
 🔗 **Live Demo:** [https://kmpat339.github.io/khush-homepage/](https://kmpat339.github.io/khush-homepage/)
 
-🎥 **Video Demo:** [Coming soon](https://youtu.be/fuRSZ824yyo) 
+🎥 **Video Demo:** [Watch on YouTube](https://youtu.be/fuRSZ824yyo)
 
 ![Homepage Screenshot](./images/screenshot-home.png)
 
@@ -117,21 +117,28 @@ This project was created as part of the **Web Development Course (Summer 2026)**
 - **Course**: [CS5610 Web Development — Northeastern University](https://johnguerra.co/classes/webDevelopment_online_summer_2026/)
 - **Instructor**: John Alexis Guerra Gómez
 
+## Project Submissions
+
+- **Design document:** [khush_homepage_design_document.pdf](./khush_homepage_design_document.pdf) (attached in this repo)
+- **Slide deck:** [Google Slides](https://docs.google.com/presentation/d/1gM2A-Z4RqMXngKxdFgcAxlAgOwrOxrt8hGalLKYdVCA/edit?usp=sharing)
+- **Video presentation:** [YouTube](https://youtu.be/fuRSZ824yyo)
+- **Thumbnail image:** [thumbnail.png](https://kmpat339.github.io/khush-homepage/images/thumbnail.png)
+
 ## Use of GenAI Tools
 
 This section discloses where generative AI was used in this project per the assignment requirements.
 
 ### Tools
 
-- **Claude Opus 4.6** (Anthropic) — used in Claude Code CLI
+- **Claude Opus 4.7** (Anthropic) — used in Claude Code CLI
 
 ### Where AI was used
 
-1. **Resume page generation** — `pages/resume.html`, `css/resume.css`, and `js/resume.js` were generated from a master prompt in a single shot, followed by two small follow-up prompts to fix bugs and add icons.
+1. **Resume page generation** — `pages/resume.html`, `css/resume.css`, and `js/resume.js` were generated from a master prompt in a single shot, followed by a few small follow-up prompts to fix bugs and add icons.
 
-2. **Prompt refinement** — The master prompt itself was iteratively refined with Claude Opus 4.6 in a separate session before being sent to the resume-generating model. Ideas and structure were mine; the AI helped sharpen the specificity and phrasing.
+2. **Prompt refinement** — The master prompt itself was iteratively refined with Claude Opus 4.7 in a separate session before being sent to the resume-generating model. Ideas and structure were mine; the AI helped sharpen the specificity and phrasing.
 
-3. **README first draft** — This README was first drafted from a prompt to Claude Opus 4.6 listing all the sections, content, and links to include. I edited and tweaked the result by hand.
+3. **README first draft** — This README was first drafted from a prompt to Claude Opus 4.7 listing all the sections, content, and links to include. I edited and tweaked the result by hand.
 
 ### Where AI was NOT used
 
@@ -150,8 +157,8 @@ All images and icons used in this project were sourced from public web pages. At
 
 ### Illustrations
 
-- `mountain.png` — [Freepik / Magnific](https://www.magnific.com/free-psd/view-nature-mountain-landscape_269375071.htm)
-- `hiker.png` — [Freepik / Magnific](https://www.magnific.com/free-vector/explorer-with-backpack-background_4302663.htm)
+- `mountain.png` — [Magnific](https://www.magnific.com/free-psd/view-nature-mountain-landscape_269375071.htm)
+- `hiker.png` — [Magnific](https://www.magnific.com/free-vector/explorer-with-backpack-background_4302663.htm)
 
 ### Movie posters
 
@@ -177,13 +184,6 @@ All images and icons used in this project were sourced from public web pages. At
 - `mail-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/envelope-of-white-paper_25647)
 - `linkedin-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
 - `github-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
-
-## Project Submission
-
-- **Design document:** [khush_homepage_design_document.pdf](./khush_homepage_design_document.pdf) (attached in this repo)
-- **Slide deck:** [Google Slides](https://docs.google.com/presentation/d/1gM2A-Z4RqMXngKxdFgcAxlAgOwrOxrt8hGalLKYdVCA/edit?usp=sharing)
-- **Video presentation:** [YouTube](https://youtu.be/fuRSZ824yyo)
-- **Thumbnail image:** [thumbnail.png](https://kmpat339.github.io/khush-homepage/images/thumbnail.png)
 
 ## License
 
