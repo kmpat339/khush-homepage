@@ -111,6 +111,8 @@ This section discloses where generative AI was used in this project per the assi
 
 2. **Prompt refinement** — The master prompt itself was iteratively refined with Claude Opus 4.6 in a separate session before being sent to the resume-generating model. Ideas and structure were mine; the AI helped sharpen the specificity and phrasing.
 
+3. **README first draft** — This README was first drafted from a prompt to Claude Opus 4.6 listing all the sections, content, and links to include. I edited and tweaked the result by hand.
+
 ### Where AI was NOT used
 
 - All other HTML, CSS, and JavaScript (`index.html`, `interests.html`, `css/style.css`, `js/main.js`) were hand-written from scratch.
@@ -119,4 +121,13 @@ This section discloses where generative AI was used in this project per the assi
 
 ### Prompts used
 
-The full prompts used to generate the resume page are documented in [prompts/resume-page-prompts.md](./prompts/resume-page-prompts.md).
+- Full prompts used to generate the resume page: [prompts/resume-page-prompts.md](./prompts/resume-page-prompts.md)
+- Prompt used to generate the first draft of this README: [prompts/readme-prompt.md](./prompts/readme-prompt.md)
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+## Contributing
+
+This is a personal portfolio and a class project. I am open to accepting pull requests at this time. Feel free to fork the repo and adapt it for your own use. If you find a bug or have a suggestion, open a PR and I'll take a look.
