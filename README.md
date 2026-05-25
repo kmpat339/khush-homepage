@@ -15,8 +15,8 @@ This is my personal homepage built for CS5610 Web Development at Northeastern Un
 ## Pages
 
 - **About Me** (`index.html`) — Introduction, my journey from cell biology to code, contact form
-- **Interests** (`interests.html`) — Tier-list style breakdown of my favorite movies, video games, and TV shows
-- **Resume** (`resume.html`) — AI-generated resume page with sticky sidebar, expandable cards, skill filtering, and a theme toggle
+- **Interests** (`pages/interests.html`) — Tier-list style breakdown of my favorite movies, video games, and TV shows
+- **Resume** (`pages/resume.html`) — AI-generated resume page with sticky sidebar, expandable cards, skill filtering, and a theme toggle
 
 ## Features
 
@@ -61,8 +61,9 @@ This is my personal homepage built for CS5610 Web Development at Northeastern Un
 ```
 khush-homepage/
 ├── index.html
-├── interests.html
-├── resume.html
+├── pages/
+│   ├── interests.html
+│   └── resume.html
 ├── css/
 │   ├── style.css
 │   └── resume.css
@@ -107,7 +108,7 @@ This section discloses where generative AI was used in this project per the assi
 
 ### Where AI was used
 
-1. **Resume page generation** — `resume.html`, `css/resume.css`, and `js/resume.js` were generated from a master prompt in a single shot, followed by two small follow-up prompts to fix bugs and add icons.
+1. **Resume page generation** — `pages/resume.html`, `css/resume.css`, and `js/resume.js` were generated from a master prompt in a single shot, followed by two small follow-up prompts to fix bugs and add icons.
 
 2. **Prompt refinement** — The master prompt itself was iteratively refined with Claude Opus 4.6 in a separate session before being sent to the resume-generating model. Ideas and structure were mine; the AI helped sharpen the specificity and phrasing.
 
@@ -115,7 +116,7 @@ This section discloses where generative AI was used in this project per the assi
 
 ### Where AI was NOT used
 
-- All other HTML, CSS, and JavaScript (`index.html`, `interests.html`, `css/style.css`, `js/main.js`) were hand-written from scratch.
+- All other HTML, CSS, and JavaScript (`index.html`, `pages/interests.html`, `css/style.css`, `js/main.js`) were hand-written from scratch.
 - All images, posters, and icons were sourced from public web pages with attribution.
 - Page structure, design choices, content (interests, movies, games, TV shows), and the overall theme were my own.
 

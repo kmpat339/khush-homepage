@@ -8,7 +8,7 @@
       content="Khush Patel's resume — education, experience, projects, and skills in software engineering and health tech."
     />
     <meta name="author" content="Khush Patel" />
-    <link rel="icon" type="image/png" href="./images/resume-icon.png" />
+    <link rel="icon" type="image/png" href="../images/resume-icon.png" />
     <title>Khush Patel's Resume</title>
     <!-- Google Fonts: Lora for headings, Open Sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,9 +25,9 @@
       crossorigin="anonymous"
     />
     <!-- Shared site styles, then resume-specific overrides -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/resume.css" />
-    <script type="module" src="./js/resume.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/resume.css" />
+    <script type="module" src="../js/resume.js"></script>
   </head>
 
   <body>
@@ -36,13 +36,10 @@
         <div class="container">
           <ul class="navbar-nav flex-row gap-3 ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">About Me</a>
+              <a class="nav-link" href="../index.html">About Me</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="resume.html"
-                aria-current="page"
+              <a class="nav-link active" href="resume.html" aria-current="page"
                 >Resume</a
               >
             </li>
@@ -53,7 +50,9 @@
         </div>
       </nav>
 
-      <div class="container resume-hero border border-3 rounded p-4 border-tan mt-3">
+      <div
+        class="container resume-hero border border-3 rounded p-4 border-tan mt-3"
+      >
         <div class="row align-items-center g-3">
           <div class="col-lg-8">
             <h1 class="resume-name">Khush M. Patel</h1>
@@ -64,7 +63,7 @@
             <address class="resume-contact">
               <a href="tel:+19739705875">
                 <img
-                  src="./images/phone-icon.png"
+                  src="../images/phone-icon.png"
                   alt=""
                   class="contact-icon"
                 />
@@ -73,11 +72,7 @@
               </a>
               <span class="contact-sep" aria-hidden="true">|</span>
               <a href="mailto:kmpat339@gmail.com">
-                <img
-                  src="./images/mail-icon.png"
-                  alt=""
-                  class="contact-icon"
-                />
+                <img src="../images/mail-icon.png" alt="" class="contact-icon" />
                 <span class="visually-hidden-text">Email:</span>
                 kmpat339@gmail.com
               </a>
@@ -88,7 +83,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./images/linkedin-icon.png"
+                  src="../images/linkedin-icon.png"
                   alt=""
                   class="contact-icon"
                 />
@@ -102,7 +97,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./images/github-icon.png"
+                  src="../images/github-icon.png"
                   alt=""
                   class="contact-icon"
                 />
@@ -157,10 +152,7 @@
                 >
               </li>
               <li>
-                <a
-                  href="#projects"
-                  class="sidebar-link"
-                  data-target="projects"
+                <a href="#projects" class="sidebar-link" data-target="projects"
                   >Projects</a
                 >
               </li>
@@ -210,8 +202,8 @@
                 </p>
                 <p class="card-detail">GPA: 4.000 / 4.000</p>
                 <p class="card-detail">
-                  <em>Coursework:</em> Computer Systems, Object-Oriented
-                  Design, Algorithms, Database Management Systems
+                  <em>Coursework:</em> Computer Systems, Object-Oriented Design,
+                  Algorithms, Database Management Systems
                 </p>
               </div>
             </article>
@@ -247,28 +239,27 @@
               <div class="card-body">
                 <details class="card-details">
                   <summary class="card-summary">
-                    <div class="card-summary-text">
-                      <h3 class="card-title">
-                        Full Stack Software Engineering Intern
-                      </h3>
-                      <p class="card-subtitle">Birth Model &middot; Remote</p>
-                    </div>
+                    <h3 class="card-title">
+                      Full Stack Software Engineering Intern
+                    </h3>
+                    <span class="card-subtitle"
+                      >Birth Model &middot; Remote</span
+                    >
                     <span class="toggle-icon" aria-hidden="true">+</span>
                     <span class="visually-hidden-text">Toggle details</span>
                   </summary>
                   <ul class="bullet-list">
                     <li>
-                      Automated clinical diagnosis workflows with backend
-                      logic and Postgres DB migrations for 10+ patient
-                      categories.
+                      Automated clinical diagnosis workflows with backend logic
+                      and Postgres DB migrations for 10+ patient categories.
                     </li>
                     <li>
                       Refactored HL7 message parsing into a modular
                       architecture.
                     </li>
                     <li>
-                      Increased backend test coverage for FHIR API
-                      integrations, resolving 44+ failing tests.
+                      Increased backend test coverage for FHIR API integrations,
+                      resolving 44+ failing tests.
                     </li>
                   </ul>
                 </details>
@@ -282,14 +273,12 @@
               <div class="card-body">
                 <details class="card-details">
                   <summary class="card-summary">
-                    <div class="card-summary-text">
-                      <h3 class="card-title">
-                        Medical Scribe / Medicolegal Assistant
-                      </h3>
-                      <p class="card-subtitle">
-                        Advanced Orthopaedic Associates &middot; Wayne, NJ
-                      </p>
-                    </div>
+                    <h3 class="card-title">
+                      Medical Scribe / Medicolegal Assistant
+                    </h3>
+                    <span class="card-subtitle"
+                      >Advanced Orthopaedic Associates &middot; Wayne, NJ</span
+                    >
                     <span class="toggle-icon" aria-hidden="true">+</span>
                     <span class="visually-hidden-text">Toggle details</span>
                   </summary>
@@ -300,8 +289,7 @@
                     </li>
                     <li>Created a structured follow-up visit EHR template.</li>
                     <li>
-                      Built a framework to generate 700+ medicolegal
-                      guidelines.
+                      Built a framework to generate 700+ medicolegal guidelines.
                     </li>
                   </ul>
                 </details>
@@ -315,13 +303,11 @@
               <div class="card-body">
                 <details class="card-details">
                   <summary class="card-summary">
-                    <div class="card-summary-text">
-                      <h3 class="card-title">Research Associate</h3>
-                      <p class="card-subtitle">
-                        Genetics Research Project at RWJ &middot; Piscataway,
-                        NJ
-                      </p>
-                    </div>
+                    <h3 class="card-title">Research Associate</h3>
+                    <span class="card-subtitle"
+                      >Genetics Research Project at RWJ &middot; Piscataway,
+                      NJ</span
+                    >
                     <span class="toggle-icon" aria-hidden="true">+</span>
                     <span class="visually-hidden-text">Toggle details</span>
                   </summary>
@@ -374,10 +360,7 @@
               </div>
             </article>
 
-            <article
-              class="resume-card"
-              data-skills="python,linux,sql"
-            >
+            <article class="resume-card" data-skills="python,linux,sql">
               <div class="card-dates">
                 <span class="date-range">Systems / Shell Scripting</span>
               </div>
@@ -386,8 +369,8 @@
                   Hybrid Visual-Lexical RAG Pipeline for Biomedical QA
                 </h3>
                 <p class="card-subtitle">
-                  Python &middot; Linux &middot; SQLite &middot; Qdrant
-                  &middot; PaddleOCR &middot; Ollama &middot; Llama 3.1
+                  Python &middot; Linux &middot; SQLite &middot; Qdrant &middot;
+                  PaddleOCR &middot; Ollama &middot; Llama 3.1
                 </p>
                 <ul class="bullet-list">
                   <li>
@@ -426,8 +409,7 @@
                     database.
                   </li>
                   <li>
-                    Implemented MVC architecture with command/strategy
-                    pattern.
+                    Implemented MVC architecture with command/strategy pattern.
                   </li>
                   <li>
                     Dual-interface support (CLI + GUI) with real-time image

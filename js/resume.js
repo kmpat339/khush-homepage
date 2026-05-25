@@ -105,7 +105,9 @@ function setupSidebarScrollSpy() {
 //    and to keep aria state consistent if needed.
 // ------------------------------------------------------------------
 function setupExpandableCards() {
-  const detailsList = document.querySelectorAll(".expandable-card .card-details");
+  const detailsList = document.querySelectorAll(
+    ".expandable-card .card-details",
+  );
   detailsList.forEach((details) => {
     details.addEventListener("toggle", () => {
       const summary = details.querySelector("summary");
@@ -199,7 +201,10 @@ function setupThemeToggle() {
 
   const applyTheme = (theme) => {
     const isDark = theme === "dark";
-    document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
+    document.documentElement.setAttribute(
+      "data-theme",
+      isDark ? "dark" : "light",
+    );
     toggleBtn.setAttribute("aria-pressed", isDark ? "true" : "false");
     if (iconEl) {
       // sun glyph for light mode, crescent moon for dark mode

@@ -1,6 +1,6 @@
 # Resume Page — AI Prompts
 
-This document contains the full prompts used to generate the AI-built resume page (`resume.html`, `css/resume.css`, `js/resume.js`).
+This document contains the full prompts used to generate the AI-built resume page (`pages/resume.html`, `css/resume.css`, `js/resume.js`).
 
 **Model used:** Claude Opus 4.6 (Anthropic) via Claude Code CLI
 
@@ -8,15 +8,15 @@ This document contains the full prompts used to generate the AI-built resume pag
 
 ## Master Prompt
 
-Used to generate `resume.html`, `css/resume.css`, and `js/resume.js` in a single shot.
+Used to generate `pages/resume.html`, `css/resume.css`, and `js/resume.js` in a single shot.
 
 ```
-Build me a resume.html page for my personal homepage. I already have index.html and interests.html that share the same nav and theme. This page needs to fit in.
+Build me a resume.html page for my personal homepage. I already have index.html at the project root and interests.html inside a pages/ folder that share the same nav and theme. This page needs to fit in.
 
 ## Tech requirements
 - Plain HTML + CSS + vanilla JavaScript (no React, no frameworks)
 - Bootstrap 5, which is already loaded in other two html pages
-- Put the HTML in resume.html at the project root (alongside my existing index.html and interests.html)
+- Put the HTML in resume.html inside the pages/ folder (alongside my existing interests.html; index.html lives at the project root)
 - Put the styling in resume.css inside the css/ folder (same folder as my existing style.css)
 - Put the interactivity in resume.js inside the js/ folder (same folder as my existing main.js)
 - Don't touch my existing style.css or main.js or the existing html files unless requested
@@ -27,7 +27,7 @@ Build me a resume.html page for my personal homepage. I already have index.html 
 
 ## Match my existing site
 - Same top nav as my other pages with About Me, Resume (active), Interests links
-- Include meta tags: description, author (Khush Patel), favicon (./images/resume-icon.png)
+- Include meta tags: description, author (Khush Patel), favicon (../images/resume-icon.png)
 - Warm earthy color palette: beige background, brown borders, orange accent, deep brown text
 - Use Google Fonts: Lora for headings, Open Sans for body text
 
@@ -125,7 +125,7 @@ Skills:
 
 ## Output
 Give me all three files in full with no shortcuts or placeholders:
-1. resume.html (root of project)
+1. pages/resume.html (inside the pages folder)
 2. css/resume.css (inside the css folder)
 3. js/resume.js (inside the js folder)
 ```
@@ -149,8 +149,8 @@ Swapped plain-text contact labels for icon images.
 ```
 Replace and use these icons from the images folder in this project for these parts specified below:
 
-- Phone number: images/phone-icon.png
-- Email: images/mail-icon.png
-- LinkedIn: images/linkedin-icon.png
-- GitHub: images/github-icon.png
+- Phone number: ../images/phone-icon.png
+- Email: ../images/mail-icon.png
+- LinkedIn: ../images/linkedin-icon.png
+- GitHub: ../images/github-icon.png
 ```
