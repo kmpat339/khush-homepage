@@ -38,12 +38,14 @@ This is my multi-page personal homepage built for CS5610 Web Development at Nort
 
 ## Install & Run
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) 18 or later (includes `npm`)
-- [Git](https://git-scm.com/)
+This site is pure static HTML/CSS/JS — no backend, no build step, no server-side code. If you just want to view it, you don't need to install anything (see Option 2). Option 1 is only for working on the project locally with live reload and lint/format tooling.
 
 ### Option 1 — Local dev server (with live reload)
+
+**Prerequisites for this option only:**
+
+- [Node.js](https://nodejs.org/) 18 or later (includes `npm`) — used only by the dev tooling (the live-reload server, ESLint, Prettier). The site itself does not need Node to run.
+- [Git](https://git-scm.com/) — for cloning. You can also download the repo as a ZIP from GitHub instead.
 
 1. Clone the repository:
    ```bash
