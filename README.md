@@ -2,9 +2,9 @@
 
 A multi-page personal portfolio site built from scratch with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
-🔗 **Live Demo:** [https://kmpat339.github.io/khush-homepage/](https://kmpat339.github.io/khush-homepage/) [...]
+🔗 **Live Demo:** [https://kmpat339.github.io/khush-homepage/](https://kmpat339.github.io/khush-homepage/)
 
-🎥 **Video Demo:** [Coming soon](#) [...]
+🎥 **Video Demo:** [Coming soon](#)
 
 ![Homepage Screenshot](./images/screenshot-home.png)
 
