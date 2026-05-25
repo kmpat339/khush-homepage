@@ -178,6 +178,13 @@ All images and icons used in this project were sourced from public web pages. At
 - `linkedin-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
 - `github-icon.png` — [Flaticon](https://www.flaticon.com/free-icon/linkedin-sign_25320)
 
+## Project Submission
+
+- **Design document:** [khush_homepage_design_document.pdf](./khush_homepage_design_document.pdf) (attached in this repo)
+- **Slide deck:** [Google Slides](https://docs.google.com/presentation/d/1gM2A-Z4RqMXngKxdFgcAxlAgOwrOxrt8hGalLKYdVCA/edit?usp=sharing)
+- **Video presentation:** [YouTube](https://youtu.be/fuRSZ824yyo)
+- **Thumbnail image:** [thumbnail.png](https://kmpat339.github.io/khush-homepage/images/thumbnail.png)
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
