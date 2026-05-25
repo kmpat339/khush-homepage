@@ -101,9 +101,9 @@ khush-homepage/
 └── eslint.config.mjs                   # ESLint config
 ```
 
-## Screenshots
+## Screenshots of Pages
 
-### Home
+### About Me
 ![Home page](./images/screenshot-home.png)
 
 ### Interests
