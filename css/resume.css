@@ -1,0 +1,730 @@
+/* ==========================================================
+   Resume page — Khush Patel
+   Theme: warm earthy (light) with charcoal dark mode toggle.
+   ========================================================== */
+
+:root {
+  --rz-bg: #f5e6d3;
+  --rz-bg-page: beige;
+  --rz-surface: #fdf6e9;
+  --rz-surface-alt: #f1e1c8;
+  --rz-border: #8b6f47;
+  --rz-border-soft: #c9b189;
+  --rz-text: #3d2c1e;
+  --rz-text-muted: #6b5544;
+  --rz-accent: #c37f1f;
+  --rz-accent-hover: #a86a18;
+  --rz-accent-soft: #f0d9b5;
+  --rz-shadow: 0 6px 18px rgba(61, 44, 30, 0.12);
+  --rz-shadow-strong: 0 10px 28px rgba(61, 44, 30, 0.22);
+  --rz-radius: 10px;
+  --rz-radius-pill: 999px;
+  --rz-transition: 0.25s ease;
+  --rz-heading-font: "Lora", Georgia, serif;
+  --rz-body-font: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto,
+    sans-serif;
+}
+
+html[data-theme="dark"] {
+  --rz-bg: #2a221b;
+  --rz-bg-page: #1c1612;
+  --rz-surface: #2f261d;
+  --rz-surface-alt: #3a2f24;
+  --rz-border: #6b4f30;
+  --rz-border-soft: #5a4530;
+  --rz-text: #f5e6d3;
+  --rz-text-muted: #c4b09a;
+  --rz-accent: #e09a3f;
+  --rz-accent-hover: #f0aa50;
+  --rz-accent-soft: #4a3a22;
+  --rz-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  --rz-shadow-strong: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* Page-level overrides (scoped to resume page by class on body sections) */
+body {
+  background-color: var(--rz-bg-page);
+  color: var(--rz-text);
+  font-family: var(--rz-body-font);
+  transition:
+    background-color var(--rz-transition),
+    color var(--rz-transition);
+}
+
+/* ==========================================================
+   Hero / header
+   ========================================================== */
+.resume-hero {
+  background-color: var(--rz-surface);
+  color: var(--rz-text);
+  transition:
+    background-color var(--rz-transition),
+    color var(--rz-transition);
+}
+
+.resume-name {
+  font-family: var(--rz-heading-font);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+  color: var(--rz-text);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+.resume-tagline {
+  font-family: var(--rz-body-font);
+  font-size: 1rem;
+  color: var(--rz-text-muted);
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.resume-contact {
+  font-family: var(--rz-body-font);
+  font-size: 0.92rem;
+  font-style: normal;
+  color: var(--rz-text);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.resume-contact a {
+  color: var(--rz-text);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--rz-border-soft);
+  padding-bottom: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color var(--rz-transition), border-color var(--rz-transition);
+}
+
+.resume-contact a:hover,
+.resume-contact a:focus-visible {
+  color: var(--rz-accent);
+  border-bottom-color: var(--rz-accent);
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: filter var(--rz-transition);
+}
+
+/* In dark mode, invert dark icons so they stay legible on the dark surface. */
+html[data-theme="dark"] .contact-icon {
+  filter: invert(1) hue-rotate(180deg) brightness(1.1);
+}
+
+.contact-sep {
+  color: var(--rz-border-soft);
+  user-select: none;
+}
+
+.resume-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 992px) {
+  .resume-actions {
+    align-items: flex-end;
+  }
+}
+
+.btn-resume-download {
+  background-color: var(--rz-accent);
+  color: #fff;
+  border: 2px solid var(--rz-accent);
+  font-family: var(--rz-body-font);
+  font-weight: 600;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--rz-radius);
+  transition:
+    background-color var(--rz-transition),
+    border-color var(--rz-transition),
+    transform var(--rz-transition),
+    box-shadow var(--rz-transition);
+}
+
+.btn-resume-download:hover,
+.btn-resume-download:focus-visible {
+  background-color: var(--rz-accent-hover);
+  border-color: var(--rz-accent-hover);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: var(--rz-shadow);
+}
+
+.btn-theme-toggle {
+  background-color: transparent;
+  color: var(--rz-text);
+  border: 2px solid var(--rz-border);
+  font-family: var(--rz-body-font);
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--rz-radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition:
+    background-color var(--rz-transition),
+    color var(--rz-transition),
+    border-color var(--rz-transition);
+}
+
+.btn-theme-toggle:hover,
+.btn-theme-toggle:focus-visible {
+  background-color: var(--rz-accent-soft);
+  border-color: var(--rz-accent);
+  color: var(--rz-text);
+}
+
+.theme-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* ==========================================================
+   Main layout
+   ========================================================== */
+.resume-main {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+  scroll-margin-top: 90px;
+}
+
+.section-heading {
+  font-family: var(--rz-heading-font);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--rz-accent);
+  border-bottom: 2px solid var(--rz-border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ==========================================================
+   Sidebar (sticky)
+   The column stretches to the row's content height (Bootstrap default),
+   so position: sticky has room to engage as the user scrolls.
+   ========================================================== */
+.resume-sidebar {
+  position: sticky;
+  top: 20px;
+  background-color: var(--rz-surface);
+  border: 2px solid var(--rz-border);
+  border-radius: var(--rz-radius);
+  padding: 1.1rem 1rem;
+  box-shadow: var(--rz-shadow);
+  transition:
+    background-color var(--rz-transition),
+    border-color var(--rz-transition),
+    box-shadow var(--rz-transition);
+}
+
+.sidebar-heading {
+  font-family: var(--rz-heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--rz-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  color: var(--rz-text);
+  font-family: var(--rz-body-font);
+  font-weight: 500;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  border-radius: 4px;
+  transition:
+    background-color var(--rz-transition),
+    color var(--rz-transition),
+    border-color var(--rz-transition);
+}
+
+.sidebar-link:hover,
+.sidebar-link:focus-visible {
+  background-color: var(--rz-accent-soft);
+  color: var(--rz-accent-hover);
+}
+
+.sidebar-link.active {
+  background-color: var(--rz-accent-soft);
+  color: var(--rz-accent-hover);
+  border-left-color: var(--rz-accent);
+  font-weight: 600;
+}
+
+.sidebar-filter {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--rz-border-soft);
+}
+
+.filter-status-text {
+  font-size: 0.88rem;
+  color: var(--rz-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.filter-skill-name {
+  color: var(--rz-accent);
+  font-weight: 700;
+}
+
+.btn-clear-filter {
+  background-color: transparent;
+  color: var(--rz-accent);
+  border: 1px solid var(--rz-accent);
+  border-radius: var(--rz-radius);
+  font-size: 0.82rem;
+  padding: 0.25rem 0.6rem;
+  transition:
+    background-color var(--rz-transition),
+    color var(--rz-transition);
+}
+
+.btn-clear-filter:hover,
+.btn-clear-filter:focus-visible {
+  background-color: var(--rz-accent);
+  color: #fff;
+}
+
+/* ==========================================================
+   Resume cards
+   ========================================================== */
+.resume-card {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.25rem;
+  background-color: var(--rz-surface);
+  border: 2px solid var(--rz-border);
+  border-radius: var(--rz-radius);
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--rz-shadow);
+  opacity: 0;
+  transform: translateY(24px);
+  transform-style: preserve-3d;
+  transition:
+    opacity 0.5s ease 0.05s,
+    transform 0.25s ease-out,
+    box-shadow var(--rz-transition),
+    background-color var(--rz-transition),
+    border-color var(--rz-transition),
+    filter var(--rz-transition);
+  will-change: transform;
+}
+
+.resume-card.visible {
+  opacity: 1;
+  transform: translateY(0) perspective(900px) rotateX(var(--tilt-x))
+    rotateY(var(--tilt-y));
+}
+
+.resume-card:hover {
+  box-shadow: var(--rz-shadow-strong);
+  border-color: var(--rz-accent);
+}
+
+.card-dates {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.15rem;
+}
+
+.date-range {
+  display: inline-block;
+  max-width: 100%;
+  font-family: var(--rz-heading-font);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--rz-accent);
+  background-color: var(--rz-accent-soft);
+  border: 1px solid var(--rz-border-soft);
+  border-radius: var(--rz-radius);
+  padding: 0.25rem 0.6rem;
+  /* Real date strings (e.g. "Nov 2025 — Jan 2026") fit on one line, but the
+     project-type labels (e.g. "Systems / Shell Scripting") need to wrap
+     instead of overflowing into the content column. */
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.3;
+}
+
+.card-body {
+  min-width: 0;
+}
+
+.card-title {
+  font-family: var(--rz-heading-font);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--rz-text);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.card-subtitle {
+  font-family: var(--rz-body-font);
+  font-size: 0.95rem;
+  color: var(--rz-text-muted);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.card-detail {
+  font-size: 0.95rem;
+  color: var(--rz-text);
+  margin-bottom: 0.3rem;
+}
+
+.bullet-list {
+  margin: 0.75rem 0 0 1.1rem;
+  padding: 0;
+  color: var(--rz-text);
+}
+
+.bullet-list li {
+  margin-bottom: 0.4rem;
+  line-height: 1.55;
+}
+
+/* Expandable details (uses native <details>) */
+.card-details {
+  width: 100%;
+}
+
+.card-details > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.1rem 0;
+  border-radius: 6px;
+  transition: color var(--rz-transition);
+}
+
+.card-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.card-details > summary:hover .card-title,
+.card-details > summary:focus-visible .card-title {
+  color: var(--rz-accent);
+}
+
+.card-summary-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--rz-accent-soft);
+  color: var(--rz-accent);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  transition:
+    transform var(--rz-transition),
+    background-color var(--rz-transition);
+}
+
+.card-details[open] .toggle-icon {
+  transform: rotate(45deg);
+  background-color: var(--rz-accent);
+  color: #fff;
+}
+
+.visually-hidden-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ==========================================================
+   Filter states (skill pill filtering)
+   ========================================================== */
+.resume-card.filtered-out {
+  opacity: 0.28;
+  filter: grayscale(60%);
+}
+
+.resume-card.filtered-in {
+  border-color: var(--rz-accent);
+  box-shadow: 0 0 0 2px var(--rz-accent-soft), var(--rz-shadow-strong);
+}
+
+/* ==========================================================
+   Skills section
+   ========================================================== */
+.skills-instructions {
+  font-size: 0.92rem;
+  color: var(--rz-text-muted);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.skills-group {
+  margin-bottom: 1.5rem;
+}
+
+.skills-group-title {
+  font-family: var(--rz-heading-font);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--rz-text);
+  margin-bottom: 0.6rem;
+}
+
+.skill-pills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-pill {
+  background-color: var(--rz-surface);
+  color: var(--rz-text);
+  border: 2px solid var(--rz-border);
+  border-radius: var(--rz-radius-pill);
+  font-family: var(--rz-body-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.35rem 0.95rem;
+  cursor: pointer;
+  transition:
+    background-color var(--rz-transition),
+    color var(--rz-transition),
+    border-color var(--rz-transition),
+    transform var(--rz-transition);
+}
+
+.skill-pill:hover,
+.skill-pill:focus-visible {
+  background-color: var(--rz-accent-soft);
+  border-color: var(--rz-accent);
+  color: var(--rz-accent-hover);
+  transform: translateY(-1px);
+}
+
+.skill-pill.active,
+.skill-pill[aria-pressed="true"] {
+  background-color: var(--rz-accent);
+  color: #fff;
+  border-color: var(--rz-accent);
+}
+
+/* ==========================================================
+   Footer
+   ========================================================== */
+.resume-footer {
+  text-align: center;
+  color: var(--rz-text-muted);
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
+  border-top: 1px dashed var(--rz-border-soft);
+  margin-top: 1.5rem;
+}
+
+/* ==========================================================
+   Focus styles (consistent across interactive elements)
+   ========================================================== */
+.sidebar-link:focus-visible,
+.skill-pill:focus-visible,
+.btn-resume-download:focus-visible,
+.btn-theme-toggle:focus-visible,
+.btn-clear-filter:focus-visible,
+.card-details > summary:focus-visible {
+  outline: 2px solid var(--rz-accent);
+  outline-offset: 2px;
+}
+
+/* ==========================================================
+   Responsive layout
+   ========================================================== */
+@media (max-width: 991.98px) {
+  .resume-sidebar {
+    position: static;
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .sidebar-link {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .sidebar-link.active {
+    border-left-color: transparent;
+    border-bottom-color: var(--rz-accent);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .resume-card {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    padding: 1rem;
+  }
+
+  .card-dates {
+    padding-top: 0;
+  }
+
+  .date-range {
+    font-size: 0.85rem;
+  }
+
+  .resume-name {
+    text-align: center;
+  }
+
+  .resume-tagline {
+    text-align: center;
+  }
+
+  .resume-contact {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .resume-actions {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* ==========================================================
+   Reduced motion preferences
+   ========================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .resume-card {
+    opacity: 1;
+    transform: none;
+    transition: box-shadow var(--rz-transition),
+      border-color var(--rz-transition);
+  }
+
+  .resume-card.visible {
+    transform: none;
+  }
+
+  .btn-resume-download:hover,
+  .skill-pill:hover {
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ==========================================================
+   Print styles (so "Download Resume" -> Save as PDF looks tidy)
+   ========================================================== */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .navbar,
+  .resume-actions,
+  .resume-sidebar-col,
+  .skills-instructions,
+  .resume-footer,
+  .sidebar-filter,
+  .toggle-icon {
+    display: none;
+  }
+
+  .resume-hero,
+  .resume-card,
+  .resume-sidebar {
+    background: #fff;
+    border-color: #555;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+
+  .resume-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .col-lg-9 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .card-details > summary {
+    cursor: default;
+  }
+
+  /* Details are force-opened from JS via beforeprint, so their content
+     renders naturally here. */
+
+  .skill-pill {
+    background: #fff;
+    border-color: #555;
+    color: #000;
+  }
+}

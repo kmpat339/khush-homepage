@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Khush Patel's resume — education, experience, projects, and skills in software engineering and health tech."
+    />
+    <meta name="author" content="Khush Patel" />
+    <link rel="icon" type="image/png" href="./images/resume-icon.png" />
+    <title>Khush Patel's Resume</title>
+    <!-- Google Fonts: Lora for headings, Open Sans for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 (matches index.html and interests.html) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Shared site styles, then resume-specific overrides -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/resume.css" />
+    <script type="module" src="./js/resume.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+          <ul class="navbar-nav flex-row gap-3 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="resume.html"
+                aria-current="page"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="interests.html">Interests</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container resume-hero border border-3 rounded p-4 border-tan mt-3">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8">
+            <h1 class="resume-name">Khush M. Patel</h1>
+            <p class="resume-tagline">
+              Software engineer with a biology background, focused on health
+              tech.
+            </p>
+            <address class="resume-contact">
+              <a href="tel:+19739705875">
+                <img
+                  src="./images/phone-icon.png"
+                  alt=""
+                  class="contact-icon"
+                />
+                <span class="visually-hidden-text">Phone:</span>
+                (973) 970-5875
+              </a>
+              <span class="contact-sep" aria-hidden="true">|</span>
+              <a href="mailto:kmpat339@gmail.com">
+                <img
+                  src="./images/mail-icon.png"
+                  alt=""
+                  class="contact-icon"
+                />
+                <span class="visually-hidden-text">Email:</span>
+                kmpat339@gmail.com
+              </a>
+              <span class="contact-sep" aria-hidden="true">|</span>
+              <a
+                href="https://www.linkedin.com/in/khushmpatel5875"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./images/linkedin-icon.png"
+                  alt=""
+                  class="contact-icon"
+                />
+                <span class="visually-hidden-text">LinkedIn:</span>
+                linkedin.com/in/khushmpatel5875
+              </a>
+              <span class="contact-sep" aria-hidden="true">|</span>
+              <a
+                href="https://github.com/kmpat339"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./images/github-icon.png"
+                  alt=""
+                  class="contact-icon"
+                />
+                <span class="visually-hidden-text">GitHub:</span>
+                github.com/kmpat339
+              </a>
+            </address>
+          </div>
+          <div class="col-lg-4 resume-actions">
+            <button
+              id="download-resume"
+              type="button"
+              class="btn btn-resume-download"
+            >
+              <span aria-hidden="true">&#8595;</span> Download Resume
+            </button>
+            <button
+              id="theme-toggle"
+              type="button"
+              class="btn btn-theme-toggle"
+              aria-label="Toggle color theme"
+              aria-pressed="false"
+            >
+              <span class="theme-icon" aria-hidden="true">&#9788;</span>
+              <span class="theme-label">Light</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container resume-main">
+      <div class="row resume-row">
+        <aside class="col-lg-3 resume-sidebar-col">
+          <nav class="resume-sidebar" aria-label="Resume sections">
+            <h2 class="sidebar-heading">On This Page</h2>
+            <ul class="sidebar-list">
+              <li>
+                <a
+                  href="#education"
+                  class="sidebar-link"
+                  data-target="education"
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  class="sidebar-link"
+                  data-target="experience"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="sidebar-link"
+                  data-target="projects"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#skills" class="sidebar-link" data-target="skills"
+                  >Skills</a
+                >
+              </li>
+            </ul>
+            <div
+              class="sidebar-filter"
+              id="filter-status"
+              role="status"
+              aria-live="polite"
+              hidden
+            >
+              <p class="filter-status-text">
+                Filtering by
+                <span class="filter-skill-name" id="filter-skill"></span>
+              </p>
+              <button
+                id="clear-filter"
+                type="button"
+                class="btn btn-clear-filter"
+              >
+                Clear filter
+              </button>
+            </div>
+          </nav>
+        </aside>
+
+        <div class="col-lg-9 resume-content">
+          <section id="education" class="resume-section">
+            <h2 class="section-heading">Education</h2>
+
+            <article class="resume-card">
+              <div class="card-dates">
+                <span class="date-range">Jan 2025 — Present</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Northeastern University</h3>
+                <p class="card-subtitle">
+                  Khoury College of Computer Sciences &middot; Boston, MA
+                </p>
+                <p class="card-detail">
+                  <strong>Master of Science in Computer Science</strong>
+                </p>
+                <p class="card-detail">GPA: 4.000 / 4.000</p>
+                <p class="card-detail">
+                  <em>Coursework:</em> Computer Systems, Object-Oriented
+                  Design, Algorithms, Database Management Systems
+                </p>
+              </div>
+            </article>
+
+            <article class="resume-card">
+              <div class="card-dates">
+                <span class="date-range">Sep 2016 — May 2020</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Rutgers University</h3>
+                <p class="card-subtitle">
+                  School of Arts and Sciences &middot; New Brunswick, NJ
+                </p>
+                <p class="card-detail">
+                  <strong
+                    >Bachelor of Arts in Cell Biology &amp; Neuroscience</strong
+                  >
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section id="experience" class="resume-section">
+            <h2 class="section-heading">Experience</h2>
+
+            <article
+              class="resume-card expandable-card"
+              data-skills="python,flask,postgres,sql"
+            >
+              <div class="card-dates">
+                <span class="date-range">Nov 2025 — Jan 2026</span>
+              </div>
+              <div class="card-body">
+                <details class="card-details">
+                  <summary class="card-summary">
+                    <div class="card-summary-text">
+                      <h3 class="card-title">
+                        Full Stack Software Engineering Intern
+                      </h3>
+                      <p class="card-subtitle">Birth Model &middot; Remote</p>
+                    </div>
+                    <span class="toggle-icon" aria-hidden="true">+</span>
+                    <span class="visually-hidden-text">Toggle details</span>
+                  </summary>
+                  <ul class="bullet-list">
+                    <li>
+                      Automated clinical diagnosis workflows with backend
+                      logic and Postgres DB migrations for 10+ patient
+                      categories.
+                    </li>
+                    <li>
+                      Refactored HL7 message parsing into a modular
+                      architecture.
+                    </li>
+                    <li>
+                      Increased backend test coverage for FHIR API
+                      integrations, resolving 44+ failing tests.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="resume-card expandable-card" data-skills="">
+              <div class="card-dates">
+                <span class="date-range">Feb 2023 — Dec 2024</span>
+              </div>
+              <div class="card-body">
+                <details class="card-details">
+                  <summary class="card-summary">
+                    <div class="card-summary-text">
+                      <h3 class="card-title">
+                        Medical Scribe / Medicolegal Assistant
+                      </h3>
+                      <p class="card-subtitle">
+                        Advanced Orthopaedic Associates &middot; Wayne, NJ
+                      </p>
+                    </div>
+                    <span class="toggle-icon" aria-hidden="true">+</span>
+                    <span class="visually-hidden-text">Toggle details</span>
+                  </summary>
+                  <ul class="bullet-list">
+                    <li>
+                      Generated 1000+ patient charts through real-time
+                      transcription in eClinicalWorks EHR.
+                    </li>
+                    <li>Created a structured follow-up visit EHR template.</li>
+                    <li>
+                      Built a framework to generate 700+ medicolegal
+                      guidelines.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+
+            <article class="resume-card expandable-card" data-skills="">
+              <div class="card-dates">
+                <span class="date-range">May 2018 — Aug 2018</span>
+              </div>
+              <div class="card-body">
+                <details class="card-details">
+                  <summary class="card-summary">
+                    <div class="card-summary-text">
+                      <h3 class="card-title">Research Associate</h3>
+                      <p class="card-subtitle">
+                        Genetics Research Project at RWJ &middot; Piscataway,
+                        NJ
+                      </p>
+                    </div>
+                    <span class="toggle-icon" aria-hidden="true">+</span>
+                    <span class="visually-hidden-text">Toggle details</span>
+                  </summary>
+                  <ul class="bullet-list">
+                    <li>
+                      Researched effect of Zag-1 Transcriptional Factor on
+                      Hermaphrodite Specific Motor Neurons in C. elegans.
+                    </li>
+                    <li>
+                      Analyzed GFP expression between control and mutant
+                      strains.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </article>
+          </section>
+
+          <section id="projects" class="resume-section">
+            <h2 class="section-heading">Projects</h2>
+
+            <article
+              class="resume-card"
+              data-skills="python,flask,react,javascript,sql,html,css"
+            >
+              <div class="card-dates">
+                <span class="date-range">Full Stack / Backend</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Urgent Care Management System</h3>
+                <p class="card-subtitle">
+                  Python &middot; Flask &middot; React &middot; JavaScript
+                  &middot; MySQL &middot; HTML &middot; CSS
+                </p>
+                <ul class="bullet-list">
+                  <li>
+                    Built a healthcare system using Python Flask/React.js for
+                    real-time patient tracking and practitioner queue
+                    management.
+                  </li>
+                  <li>
+                    Designed 10+ tables in MySQL database in 3NF with stored
+                    procedures and triggers.
+                  </li>
+                  <li>
+                    Created an automated billing module with insurance
+                    calculations using database triggers.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article
+              class="resume-card"
+              data-skills="python,linux,sql"
+            >
+              <div class="card-dates">
+                <span class="date-range">Systems / Shell Scripting</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">
+                  Hybrid Visual-Lexical RAG Pipeline for Biomedical QA
+                </h3>
+                <p class="card-subtitle">
+                  Python &middot; Linux &middot; SQLite &middot; Qdrant
+                  &middot; PaddleOCR &middot; Ollama &middot; Llama 3.1
+                </p>
+                <ul class="bullet-list">
+                  <li>
+                    Built end-to-end RAG system comparing BM25 vs ColPali
+                    vision-guided prefiltering on BioASQ/PMC PDFs.
+                  </li>
+                  <li>
+                    Designed offline pipeline: PaddleOCR extraction,
+                    fixed-window chunking, ColPali embeddings (Qdrant), BM25
+                    indexing.
+                  </li>
+                  <li>
+                    Stored chunk metadata and retrieval logs in a local SQLite
+                    database for offline analysis.
+                  </li>
+                  <li>
+                    Evaluated with Rouge-L, BERTscore, Exact Match, Recall@K
+                    using Llama 3.1 8B through Ollama locally.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="resume-card" data-skills="java,junit">
+              <div class="card-dates">
+                <span class="date-range">Java Development</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">GRIME Image Processing App</h3>
+                <p class="card-subtitle">
+                  Java &middot; Java Swing &middot; JUnit
+                </p>
+                <ul class="bullet-list">
+                  <li>
+                    Built an image editor with Java, Java Swing, and a custom
+                    database.
+                  </li>
+                  <li>
+                    Implemented MVC architecture with command/strategy
+                    pattern.
+                  </li>
+                  <li>
+                    Dual-interface support (CLI + GUI) with real-time image
+                    previews.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+
+          <section id="skills" class="resume-section">
+            <h2 class="section-heading">Skills</h2>
+            <p class="skills-instructions">
+              Click any skill to filter the experience and projects above that
+              use it.
+            </p>
+
+            <div class="skills-group">
+              <h3 class="skills-group-title">Languages &amp; Frameworks</h3>
+              <ul class="skill-pills" role="list">
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="java"
+                    aria-pressed="false"
+                  >
+                    Java
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="python"
+                    aria-pressed="false"
+                  >
+                    Python
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="linux"
+                    aria-pressed="false"
+                  >
+                    Linux
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="c"
+                    aria-pressed="false"
+                  >
+                    C
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="javascript"
+                    aria-pressed="false"
+                  >
+                    JavaScript
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="react"
+                    aria-pressed="false"
+                  >
+                    React
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="flask"
+                    aria-pressed="false"
+                  >
+                    Flask
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="django"
+                    aria-pressed="false"
+                  >
+                    Django
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="nodejs"
+                    aria-pressed="false"
+                  >
+                    Node.js
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="html"
+                    aria-pressed="false"
+                  >
+                    HTML
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="css"
+                    aria-pressed="false"
+                  >
+                    CSS
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="sql"
+                    aria-pressed="false"
+                  >
+                    SQL
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skills-group">
+              <h3 class="skills-group-title">Tools &amp; Libraries</h3>
+              <ul class="skill-pills" role="list">
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="postgres"
+                    aria-pressed="false"
+                  >
+                    Postgres
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="git"
+                    aria-pressed="false"
+                  >
+                    Git
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="scikit-learn"
+                    aria-pressed="false"
+                  >
+                    scikit-learn
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="pytest"
+                    aria-pressed="false"
+                  >
+                    Pytest
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="junit"
+                    aria-pressed="false"
+                  >
+                    JUnit
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="tableau"
+                    aria-pressed="false"
+                  >
+                    Tableau
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="skill-pill"
+                    type="button"
+                    data-skill="powerbi"
+                    aria-pressed="false"
+                  >
+                    Power BI
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container resume-footer">
+      <p>
+        &copy; 2026 Khush M. Patel &middot; Built with HTML, CSS, and vanilla
+        JavaScript.
+      </p>
+    </footer>
+  </body>
+</html>
