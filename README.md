@@ -1,6 +1,6 @@
 # Khush's Personal Homepage
 
-A multi-page personal portfolio site built from scratch with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
+A multi-page personal homepage built from scratch with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
 🔗 **Live Demo:** [https://kmpat339.github.io/khush-homepage/](https://kmpat339.github.io/khush-homepage/)
 
@@ -10,7 +10,7 @@ A multi-page personal portfolio site built from scratch with HTML, CSS, Bootstra
 
 ## About
 
-This is my personal homepage built for CS5610 Web Development at Northeastern University. The site introduces who I am, what I'm interested in, and what I've worked on. It uses a warm earthy color palette with a hand-built interactive mountain animation, a colorful interests page, and an AI-generated resume page.
+This is my multi-page personal portfolio site built for CS5610 Web Development at Northeastern University. It introduces who I am, what I'm interested in, and what I've worked on, using a warm earthy color palette with a hand-built interactive mountain animation, a colorful interests page, and an AI-generated resume page.
 
 ## Pages
 
